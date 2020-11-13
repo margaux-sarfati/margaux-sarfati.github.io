@@ -8,10 +8,81 @@
 </head>
 <body>
 <div>
-	<div class="navbar">
-	</div>
+	
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="border-bottom: 3px solid #242424; background: #0A0A0A">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="" style="margin-left: 80px; margin-top: 22px; margin-bottom: 16px">
+      <h1 style="font-size: 46px;font-weight: bold;color: white">MARGA<span style="color: #39EC96;">UX</span> <br> <p style="color: #878787;font-size: 14px;margin-top: -15px">UX Designer</p></h1>
+
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#whomi">
+        Qui suis-je ?
+      </a>
+
+      <a class="navbar-item" href="#expertise">
+        Expertise
+      </a>
+      <a class="navbar-item">
+        Ma méthodologie
+      </a>
+      <a class="navbar-item">
+        Use cases
+      </a>
+
+
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons" style="margin-right: 80px">
+          <button style="background: #39EC96; border-color: #39EC96; border-radius: 21px; padding: 10px 30px; box-shadow: none; font-size: 18px; font-weight: 600; color: #0A0A0A;">Me contacter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+
+
+
 	<div class="container section">
-		<div class="columns is-vcentered">
+		<div class="columns is-vcentered" style="min-height: 100vh" id="whomi">
 		<div class="column">
 			<h2 style="color: #39EC96;text-transform: uppercase;font-size: 16px;font-family: 'Asap', sans-serif; font-weight: bold;">Explorer. Créer. Innover.</h2>
 			<h1 style="font-size: 60px;font-family: 'Asap', sans-serif;color: #FFFFFF;font-weight: bold;">Créatrice d'expériences uniques</h1>
@@ -25,7 +96,7 @@
 	<br>
 	<br>
 	<br>
-	<div class="columns">
+	<div class="columns" style="min-height: 100vh" id="expertise">
 		<div class="column is-narrow">
 			<img src="./images/visualisation.png">
 		</div>
@@ -37,7 +108,120 @@
 				</span></p>
 		</div>
 	</div>
+	<div style="min-height: 100vh">
+		<h1 style="font-size: 60px;font-family: 'Asap', sans-serif;color: #FFFFFF;font-weight: bold; text-align: center; margin-bottom: 40px">Ma méthodologie</h1>
+		<div class="columns is-multiline">
+			<div class="column is-4">
+				<div style="background: #242424; border-radius: 20px; padding: 30px;">
+					<center><svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5 36.6667C29.7047 36.6667 37.1666 29.2048 37.1666 20C37.1666 10.7953 29.7047 3.33337 20.5 3.33337C11.2952 3.33337 3.83331 10.7953 3.83331 20C3.83331 29.2048 11.2952 36.6667 20.5 36.6667Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.5667 12.9333L24.0333 23.5333L13.4333 27.0667L16.9667 16.4667L27.5667 12.9333Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></center>
+				<h1 style="font-size: 24px; color: white"><span style="color: #39EC96;; font-size: 30px; font-weight: bold; font-weight: bold; margin-bottom: 22px">01</span> Explorer</h1>
+				<p style="color: #D4D4D4; font-size: 16px;">Je me mets à la place des utilisateurs pour mieux comprendre leurs besoins. J’observe les solutions existantes.</p>
+				</div>
+			</div>
+			<div class="column is-4">
+				<div style="background: #242424; border-radius: 20px; padding: 30px;">
+					<center><svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.8334 6.66663H7.16671C6.28265 6.66663 5.43481 7.01782 4.80968 7.64294C4.18456 8.26806 3.83337 9.1159 3.83337 9.99996V33.3333C3.83337 34.2173 4.18456 35.0652 4.80968 35.6903C5.43481 36.3154 6.28265 36.6666 7.16671 36.6666H30.5C31.3841 36.6666 32.2319 36.3154 32.8571 35.6903C33.4822 35.0652 33.8334 34.2173 33.8334 33.3333V21.6666" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.3334 4.16664C31.9964 3.5036 32.8957 3.1311 33.8334 3.1311C34.7711 3.1311 35.6703 3.5036 36.3334 4.16664C36.9964 4.82968 37.3689 5.72896 37.3689 6.66664C37.3689 7.60432 36.9964 8.5036 36.3334 9.16664L20.5 25L13.8334 26.6666L15.5 20L31.3334 4.16664Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></center>
+				<h1 style="font-size: 24px; color: white"><span style="color: #39EC96;; font-size: 30px; font-weight: bold; font-weight: bold; margin-bottom: 22px">02</span> Cadrer</h1>
+				<p style="color: #D4D4D4; font-size: 16px;">Je défini, avec les clients, le cadre de l’expérience et les besoins afin de formaliser le parcours utilisateur.</p>
+				</div>
+			</div>
+			<div class="column is-4">
+				<div style="background: #242424; border-radius: 20px; padding: 30px;">
+					<center>
+						<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5 3.33337L3.83337 11.6667L20.5 20L37.1667 11.6667L20.5 3.33337Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.83337 28.3334L20.5 36.6667L37.1667 28.3334" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.83337 20L20.5 28.3333L37.1667 20" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
+</center>
+				<h1 style="font-size: 24px; color: white"><span style="color: #39EC96;; font-size: 30px; font-weight: bold; font-weight: bold; margin-bottom: 22px">03</span> Imaginer</h1>
+				<p style="color: #D4D4D4; font-size: 16px;">Je génère plusieurs idées pour résoudre la problématique et cherche des solutions innovantes.</p>
+				</div>
+			</div>
+			<div class="column is-4">
+				<div style="background: #242424; border-radius: 20px; padding: 30px;">
+					<center>
+						<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.1667 5H8.83333C6.99238 5 5.5 6.49238 5.5 8.33333V31.6667C5.5 33.5076 6.99238 35 8.83333 35H32.1667C34.0076 35 35.5 33.5076 35.5 31.6667V8.33333C35.5 6.49238 34.0076 5 32.1667 5Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5 15H35.5" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5 35V15" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+</center>
+				<h1 style="font-size: 24px; color: white"><span style="color: #39EC96;; font-size: 30px; font-weight: bold; font-weight: bold; margin-bottom: 22px">04</span> Designer</h1>
+				<p style="color: #D4D4D4; font-size: 16px;">Je conçois les premières maquettes et prototypes interactifs avec l’outil de conception Figma.</p>
+				</div>
+			</div>
+			<div class="column is-4">
+				<div style="background: #242424; border-radius: 20px; padding: 30px;">
+					<center>
+						<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.1666 6.66663H30.5C31.384 6.66663 32.2319 7.01782 32.857 7.64294C33.4821 8.26806 33.8333 9.1159 33.8333 9.99996V33.3333C33.8333 34.2173 33.4821 35.0652 32.857 35.6903C32.2319 36.3154 31.384 36.6666 30.5 36.6666H10.5C9.6159 36.6666 8.76806 36.3154 8.14294 35.6903C7.51782 35.0652 7.16663 34.2173 7.16663 33.3333V9.99996C7.16663 9.1159 7.51782 8.26806 8.14294 7.64294C8.76806 7.01782 9.6159 6.66663 10.5 6.66663H13.8333" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5 3.33337H15.5C14.5796 3.33337 13.8334 4.07957 13.8334 5.00004V8.33337C13.8334 9.25385 14.5796 10 15.5 10H25.5C26.4205 10 27.1667 9.25385 27.1667 8.33337V5.00004C27.1667 4.07957 26.4205 3.33337 25.5 3.33337Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+</center>
+				<h1 style="font-size: 24px; color: white"><span style="color: #39EC96;; font-size: 30px; font-weight: bold; font-weight: bold; margin-bottom: 22px">05</span> Tester</h1>
+				<p style="color: #D4D4D4; font-size: 16px;">J’analyse le prototype avec des utilisateurs réels afin d’optimiser et valider la solution pensée.</p>
+				</div>
+			</div>
+			<div class="column is-4">
+				<div style="background: #242424; border-radius: 20px; padding: 30px;">
+					<center>
+						<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5 35H8.83333C7.94928 35 7.10143 34.6488 6.47631 34.0237C5.85119 33.3986 5.5 32.5507 5.5 31.6667V8.33333C5.5 7.44928 5.85119 6.60143 6.47631 5.97631C7.10143 5.35119 7.94928 5 8.83333 5H15.5" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.1666 28.3333L35.5 20L27.1666 11.6666" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.5 20H15.5" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+</center>
+				<h1 style="font-size: 24px; color: white"><span style="color: #39EC96;; font-size: 30px; font-weight: bold; font-weight: bold; margin-bottom: 22px">06</span> Déployer</h1>
+				<p style="color: #D4D4D4; font-size: 16px;">Je travaille avec l’équipe de développement pour la durée du développement jusqu’au lancement</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div style="min-height: 100vh">
+		<h1 style="font-size: 60px;font-family: 'Asap', sans-serif;color: #FFFFFF;font-weight: bold; text-align: center; margin-bottom: 40px">Use cases</h1>
+		<div class="columns is-multiline">
+			<div class="column is-6">
+				<div style="background: #242424; border-radius: 20px;">
+					<div class="columns is-mobile">
+						<div class="column is-8">
+							<h2 style="margin-bottom: 10px; text-transform: uppercase; color: #39EC96; font-size: 12px; font-weight: bold; margin-left: 30px; margin-top: 18px">Application Mobile</h2>
+							<h1 style="font-size: 30px;font-weight: bold;color: #FFFFFF; margin-bottom: 20px; margin-left: 30px; ">Garden Keeper</h1>
+							<p style="font-size: 16px;color: #D4D4D4; margin-bottom: 23px; margin-left: 30px; ">Idéation et prototypage d’une application mobile permettant de suivre la santé de ses plantes.
+Réalisé dans le cadre de mes études.</p>
+							<a href="garden-keeper.html" style="color: #39EC96; cursor: pointer; font-size: 16px;font-weight: 500; margin-left: 30px; ">
+								Voir le projet
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -6px">
+<path d="M5 12H19" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5L19 12L12 19" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+							</a>
+						</div>
+						<div class="column">
+							<img src="./images/garden_prev.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -51,5 +235,14 @@
 		background: #0A0A0A;
 		min-height: 100vh;
 		font-family: 'Asap', sans-serif;
+	}
+	.navbar-item{
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.navbar-item:hover{
+		background: transparent !important;
+		color: #39EC96 !important;
 	}
 </style>
