@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Margaux</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="border-bottom: 3px solid #242424; background: #0A0A0A">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html" style="margin-left: 80px; margin-top: 22px; margin-bottom: 16px">
+      <h1 style="font-size: 46px;font-weight: bold;color: white">MARGA<span style="color: #39EC96;">UX</span> <br> <p style="color: #878787;font-size: 14px;margin-top: -15px">UX Designer</p></h1>
+
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        Qui suis-je ?
+      </a>
+
+      <a class="navbar-item" href="index.html">
+        Expertise
+      </a>
+      <a class="navbar-item" href="index.html">
+        Ma méthodologie
+      </a>
+      <a class="navbar-item" href="index.html">
+        Use cases
+      </a>
+
+
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons" style="margin-right: 80px">
+          <button style="background: #39EC96; border-color: #39EC96; border-radius: 21px; padding: 10px 30px; box-shadow: none; font-size: 18px; font-weight: 600; color: #0A0A0A;">Me contacter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+
+
+<div class="container section" style="margin-top: 129px">
+	<a href="index.html" style="color: #FFFFFF;font-size: 14px;"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 9.5L1 5L5 0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> Retour aux Use Cases</a>
+
+<div class="columns is-vcentered" style="margin-top: 75px; ">
+	<div class="column">
+		<h2 style="color: #39EC96;text-transform: uppercase;font-size: 16px;font-family: 'Asap', sans-serif; font-weight: bold;">Amélioration continue</h2>
+			<h1 style="font-size: 60px;font-family: 'Asap', sans-serif;color: #FFFFFF;font-weight: bold;">Clinical Trials</h1>
+			<p style="margin-top: 30px;color: #D4D4D4;font-size: 16px;">Le but de cette application est de facilités la recherche d’informations précises pour des experts métiers. <br>
+Réaliser pour Real Consulting Data</p>
+		<h6 style="color: #616978;font-size: 14px;font-style: italic; margin-top: 30px">Suivis de projet - Retour clients - Recherche - Benchmark</h6>
+	</div>
+	<div class="column is-narrow">
+		<img src="./images/clinical_trials.png">
+	</div>
+</div>
+<div class="columns is-multiline" style="margin-top: 120px">
+	<div class="column is-4">
+		<h1 style="color: #FFFFFF;font-size: 24px;font-weight: bold;">
+			<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -4px">
+<path d="M25 26.25V23.75C25 22.4239 24.4732 21.1521 23.5355 20.2145C22.5979 19.2768 21.3261 18.75 20 18.75H10C8.67392 18.75 7.40215 19.2768 6.46447 20.2145C5.52678 21.1521 5 22.4239 5 23.75V26.25" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 13.75C17.7614 13.75 20 11.5114 20 8.75C20 5.98858 17.7614 3.75 15 3.75C12.2386 3.75 10 5.98858 10 8.75C10 11.5114 12.2386 13.75 15 13.75Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+		Mon Rôle</h1>
+		<p style="color: #D4D4D4;font-size: 16px; margin-left: 37px">UX Designer</p>
+	</div>
+
+
+	<div class="column is-4">
+		<h1 style="color: #FFFFFF;font-size: 24px;font-weight: bold;">
+			<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px">
+<path d="M18.3749 7.87501C18.1459 8.10867 18.0176 8.42281 18.0176 8.75001C18.0176 9.0772 18.1459 9.39134 18.3749 9.62501L20.3749 11.625C20.6086 11.854 20.9227 11.9823 21.2499 11.9823C21.5771 11.9823 21.8913 11.854 22.1249 11.625L26.8374 6.91251C27.466 8.30149 27.6563 9.84905 27.383 11.3489C27.1097 12.8488 26.3858 14.2298 25.3078 15.3079C24.2297 16.3859 22.8488 17.1098 21.3489 17.3831C19.849 17.6564 18.3014 17.466 16.9124 16.8375L8.27494 25.475C7.77766 25.9723 7.1032 26.2517 6.39994 26.2517C5.69668 26.2517 5.02222 25.9723 4.52494 25.475C4.02766 24.9777 3.74829 24.3033 3.74829 23.6C3.74829 22.8967 4.02766 22.2223 4.52494 21.725L13.1624 13.0875C12.5339 11.6985 12.3436 10.151 12.6169 8.65107C12.8902 7.15118 13.614 5.7702 14.6921 4.69216C15.7701 3.61411 17.1511 2.89022 18.651 2.61693C20.1509 2.34365 21.6985 2.53396 23.0874 3.16251L18.3874 7.86251L18.3749 7.87501Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+		Mes outils </h1>
+		<p style="color: #D4D4D4;font-size: 16px; margin-left: 37px">Figma<br>
+Intercom<br>
+Teams<br>
+ClickUp
+	</div>
+
+
+	<div class="column is-4">
+		<h1 style="color: #FFFFFF;font-size: 24px;font-weight: bold;">
+			<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px">
+<path d="M23.75 26.25L15 20L6.25 26.25V6.25C6.25 5.58696 6.51339 4.95107 6.98223 4.48223C7.45107 4.01339 8.08696 3.75 8.75 3.75H21.25C21.913 3.75 22.5489 4.01339 23.0178 4.48223C23.4866 4.95107 23.75 5.58696 23.75 6.25V26.25Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+		Ma méthodologie</h1>
+		<p style="color: #D4D4D4;font-size: 16px; margin-left: 37px">Benchmark concurentiel<br>
+Auditer l’expérience<br>
+Prototypage<br>
+Test utilisateur<br>
+Sprint
+	</div>
+	<div class="column is-4">
+		<h1 style="color: #FFFFFF;font-size: 24px;font-weight: bold;">
+			<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.25 26.25V23.75C21.25 22.4239 20.7232 21.1521 19.7855 20.2145C18.8479 19.2768 17.5761 18.75 16.25 18.75H6.25C4.92392 18.75 3.65215 19.2768 2.71447 20.2145C1.77678 21.1521 1.25 22.4239 1.25 23.75V26.25" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.25 13.75C14.0114 13.75 16.25 11.5114 16.25 8.75C16.25 5.98858 14.0114 3.75 11.25 3.75C8.48858 3.75 6.25 5.98858 6.25 8.75C6.25 11.5114 8.48858 13.75 11.25 13.75Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.75 26.25V23.75C28.7492 22.6422 28.3804 21.566 27.7017 20.6904C27.023 19.8148 26.0727 19.1895 25 18.9125" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3.91251C21.0755 4.18788 22.0288 4.81338 22.7095 5.69039C23.3903 6.56741 23.7598 7.64604 23.7598 8.75626C23.7598 9.86647 23.3903 10.9451 22.7095 11.8221C22.0288 12.6991 21.0755 13.3246 20 13.6" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+		L’équipe</h1>
+		<p style="color: #D4D4D4;font-size: 16px; margin-left: 37px">Expert métier<br>
+Developpeurs<br>
+Project manager
+	</div>
+
+
+
+</div>
+
+
+<div>
+	<div class="columns is-mobile is-vcentered" style="margin-top: 85px">
+		<div class="column is-narrow">
+			<h1 style="color: #FFFFFF; font-size: 24px;font-weight: bold;">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -5px">
+<path d="M1.25 7.5V27.5L10 22.5L20 27.5L28.75 22.5V2.5L20 7.5L10 2.5L1.25 7.5Z" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 2.5V22.5" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 7.5V27.5" stroke="#39EC96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+			Le procesus</h1>
+		</div>
+		<div class="column">
+			<div style="height: 3px; background: #242424"></div>
+		</div>
+	</div>
+	<div class="columns is-centered is-multiline">
+		<div class="column is-one-fifth">
+			<center>
+				<div>
+					<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="25" fill="#39EC96"/>
+<path d="M34 24.5C34.0034 25.8199 33.6951 27.1219 33.1 28.3C32.3944 29.7118 31.3098 30.8992 29.9674 31.7293C28.6251 32.5594 27.0782 32.9994 25.5 33C24.1801 33.0035 22.8781 32.6951 21.7 32.1L16 34L17.9 28.3C17.3049 27.1219 16.9966 25.8199 17 24.5C17.0006 22.9218 17.4406 21.3749 18.2707 20.0326C19.1008 18.6903 20.2883 17.6056 21.7 16.9C22.8781 16.305 24.1801 15.9966 25.5 16H26C28.0843 16.115 30.053 16.9948 31.5291 18.4709C33.0052 19.947 33.885 21.9157 34 24V24.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+				</div>
+				<div>
+					<div style="width: 4px; height: 20px; background: #242424; margin-top: 20px; margin-bottom: 20px"></div>
+				</div>
+				<h1 style="font-size: 16px; color: white; font-weight: bold; margin-bottom: 10px">Retour clients</h1>
+				<p style="color: #D4D4D4; font-size: 14px;">Prise en compte des retours clients, avis et suggestions transmis par l’expert métier</p>
+			</center>
+		</div>
+
+
+
+		<div class="column is-one-fifth">
+		<center>
+				<div>
+					<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="25" fill="#39EC96"/>
+<path d="M25 35C30.5228 35 35 30.5228 35 25C35 19.4772 30.5228 15 25 15C19.4772 15 15 19.4772 15 25C15 30.5228 19.4772 35 25 35Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.2398 20.76L27.1198 27.12L20.7598 29.24L22.8798 22.88L29.2398 20.76Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+				</div>
+				<div>
+					<div style="width: 4px; height: 20px; background: #242424; margin-top: 20px; margin-bottom: 20px"></div>
+				</div>
+				<h1 style="font-size: 16px; color: white; font-weight: bold; margin-bottom: 10px">Exploration</h1>
+				<p style="color: #D4D4D4; font-size: 14px;">Des pistes d’améliorations possibles.</p>
+			</center>
+		</div>
+
+		<div class="column is-one-fifth">
+		<center>
+				<div>
+					<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="25" fill="#39EC96"/>
+<path d="M32 16H18C16.8954 16 16 16.8954 16 18V32C16 33.1046 16.8954 34 18 34H32C33.1046 34 34 33.1046 34 32V18C34 16.8954 33.1046 16 32 16Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 22H34" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 34V22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+				</div>
+				<div>
+					<div style="width: 4px; height: 20px; background: #242424; margin-top: 20px; margin-bottom: 20px"></div>
+				</div>
+				<h1 style="font-size: 16px; color: white; font-weight: bold; margin-bottom: 10px">Prototype et tests</h1>
+				<p style="color: #D4D4D4; font-size: 14px;">Prototypage et tests auprès de nos utilisateurs principaux.</p>
+			</center>
+		</div>
+
+		<div class="column is-one-fifth">
+		<center>
+				<div>
+					<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="25" fill="#39EC96"/>
+<path d="M30 34V32C30 30.9391 29.5786 29.9217 28.8284 29.1716C28.0783 28.4214 27.0609 28 26 28H18C16.9391 28 15.9217 28.4214 15.1716 29.1716C14.4214 29.9217 14 30.9391 14 32V34" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 24C24.2091 24 26 22.2091 26 20C26 17.7909 24.2091 16 22 16C19.7909 16 18 17.7909 18 20C18 22.2091 19.7909 24 22 24Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 34V32C35.9993 31.1137 35.7044 30.2528 35.1614 29.5523C34.6184 28.8519 33.8581 28.3516 33 28.13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29 16.13C29.8604 16.3503 30.623 16.8507 31.1676 17.5523C31.7122 18.2539 32.0078 19.1168 32.0078 20.005C32.0078 20.8932 31.7122 21.7561 31.1676 22.4577C30.623 23.1593 29.8604 23.6597 29 23.88" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+
+				</div>
+				<div>
+					<div style="width: 4px; height: 20px; background: #242424; margin-top: 20px; margin-bottom: 20px"></div>
+				</div>
+				<h1 style="font-size: 16px; color: white; font-weight: bold; margin-bottom: 10px">Developpement des nouveautés</h1>
+				<p style="color: #D4D4D4; font-size: 14px;">Avec l’équipe de développeurs, mise en place de sprints sur ClickUp </p>
+			</center>
+		</div>
+
+	</div>
+</div>
+
+
+<div style="margin-top: 70px">
+	<center>
+		<h2 style="color: #D4D4D4;font-size: 24px;font-weight: bold;">Le challenge</h2>
+		<h1 style="font-size: 34px;font-weight: bold;color: #FFFFFF;">Réorganiser la donnée et améliorer l’expérience utilisateur de recherche d’un essai clinique pour les besoins opérationnels de nos utilisateurs.</h1>
+		<h2 style="color: #39EC96;font-size: 24px;font-weight: 500;">Proposer un service plus adapté que clinicaltrials.gov </h2>
+	</center>
+</div>
+
+<div class="columns" style="margin-top: 120px">
+	<div class="column is-6">
+		<h2 style="color: #39EC96;text-transform: uppercase;font-size: 16px;font-family: 'Asap', sans-serif; font-weight: bold;">Contexte</h2>
+			<h1 style="font-size: 24px;font-family: 'Asap', sans-serif;color: #FFFFFF;font-weight: bold;">Introduction & icebreaker</h1>
+			<p style="margin-top: 30px;color: #D4D4D4;font-size: 16px;">Real Consulting Data est une société qui créer des applications pour facilité l’utilisation de la donnée dans le domaine de la santé. RCD récupère des volumes de données important venant de divers sources à travers le monde entier pour les condencés dans des applications opérationnelles.<br><br>Le principal challenge de l’application Clincal Trials est de récuperer la base de donnée de clinicaltrials.gov (recence tous les essais cliniques dans le monde) afin d’en améliorer l’expérience d’utilisation pour nos clients qui ont des besoins spécifiques. De plus, il faut églement développer de nouvelles fonctionnalités pour facilité l’utilisation opérationnelle de ces données.</p>
+	</div>
+	<div class="column is-6">
+		<img src="./images/ct_rcd.png">
+	</div>
+</div>
+
+<div class="columns" style="margin-top: 120px">
+	<div class="column is-6">
+		<h2 style="color: #39EC96;text-transform: uppercase;font-size: 16px;font-family: 'Asap', sans-serif; font-weight: bold;">Premiere étape</h2>
+			<h1 style="font-size: 24px;font-family: 'Asap', sans-serif;color: #FFFFFF;font-weight: bold;">Affichage de l’information</h1>
+			<p style="margin-top: 30px;color: #D4D4D4;font-size: 16px;">En rassemblant les besoins de nos utilisateurs grâce à l’aide de l’expert métier de notre équipe j’ai pu constituer une premiere fiche rassemblant les informations essentiels à la sélection d’essais clinique pour nos utilisateurs.</p>
+	</div>
+	<div class="column is-6">
+		
+	</div>
+</div>
+<div>
+	<br>
+	<img src="./images/ct_middle.png" style="width: 100%">
+</div>
+<div class="columns" style="margin-top: 120px">
+	<div class="column is-10">
+		<h2 style="color: #39EC96;text-transform: uppercase;font-size: 16px;font-family: 'Asap', sans-serif; font-weight: bold;">Retour et demandes clients</h2>
+			<h1 style="font-size: 24px;font-family: 'Asap', sans-serif;color: #FFFFFF;font-weight: bold;">Prendre en compte les demandes, améliorer l’interface et nouvelles fonctionnalités</h1>
+			<p style="margin-top: 30px;color: #D4D4D4;font-size: 16px;">Notre expert métier est en contact direct avec beaucoup de nos utilisateurs, il se charge de discuter avec eux de leur besoins et de récolter leurs impressions sur nos nouvelles fonctionnalité. Voici l’exemple d’un rapport envoyé par cet expert sur lequel je me base pour améliorer l’application.</p>
+	</div>
+	<div class="column ">
+		
+	</div>
+</div>
+<div>
+	<br>
+	<img src="./images/ct_end.png" style="width: 100%">
+</div>
+
+
+</div>
+</body>
+</html>
+<style type="text/css">
+	body{
+		background: #0A0A0A;
+		min-height: 100vh;
+		font-family: 'Asap', sans-serif;
+	}
+	.navbar-item{
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.navbar-item:hover{
+		background: transparent !important;
+		color: #39EC96 !important;
+	}
+</style>
